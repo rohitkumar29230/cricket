@@ -2,5 +2,6 @@
     height: 30px;
     width: 30px;
     background:red;
+	border: 1px solid #f03;
     cursor: pointer;
 }
