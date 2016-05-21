@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#test").click(function(){
+    $("#test").hover(function(){
         $.ajax({
 			url: 'http://localhost/database.json',
             success: function(res){
