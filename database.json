@@ -1,14 +1,294 @@
-"India":[
-    {
-        "firstName":"Dheeraj", 
-        "lastName":"Doe"
-    }, 
-    {
-        "firstName":"Anna", 
-        "lastName":"Smith"
-    }, 
-    {
-        "firstName":"Peter",
-        "lastName":"Jones"
-    }
-]
+{
+	"India": {
+		"Players": [{
+			"firstname": "Virat",
+			"last_name": "Kohli",
+			"Role": "Allrounder"
+		}, {
+			"firstname": "Rohit",
+			"lastName": "Sharma",
+			"Role": "Right hand Batsman"
+		}, {
+			"firstname": "Shikhar",
+			"lastName": "Dhawan",
+			"Role": "Left hand Batsman"
+		}, {
+			"firstname": "Virat",
+			"lastName": "Kohli",
+			"Role": "Right hand Batsman"
+		}, {
+			"firstname": "Suresh",
+			"lastName": "Raina",
+			"Role": "Right hand Batsman"
+		}, {
+			"firstname": "Yuvraj",
+			"lastName": "Singh",
+			"Role": "Right hand Batsman"
+		}, {
+			"firstname": "Ajinkya",
+			"lastName": "Rahane",
+			"Role": "Right hand Batsman"
+		}, {
+			"firstname": "Mahendra",
+			"lastName": "Dhoni",
+			"Role": "Right hand Batsman"
+		}, {
+			"firstname": "Ravichandran",
+			"lastName": "Ashwin",
+			"Role": "Right Arm off break bowler"
+		}, {
+			"firstname": "Mohammad",
+			"lastName": "Shami",
+			"Role": "Right Arm fast medium bowler"
+		}, {
+			"firstname": "Jaspreet",
+			"lastName": "Bumrah",
+			"Role": "Right Arm fast medium bowler"
+		}, {
+			"firstname": "Ashish",
+			"lastName": "Nehra",
+			"Role": "Right Arm fast medium bowler"
+		}]
+
+	},
+
+	"Pakistan": {
+		"Players": [{
+			"firstname": "Mohammad",
+			"lastName": "Shehzad",
+			"Role": "Left hand Batsman"
+		}, {
+			"firstname": "Mohammad",
+			"lastName": "Hafeez",
+			"Role": "Right hand Batsman"
+		}, {
+			"firstname": "Umar",
+			"lastName": "Akmal",
+			"Role": "Wicket keeper/Right hand Batsman"
+		}, {
+			"firstname": "Misbah",
+			"lastName": "Ul haq",
+			"Role": "Right hand Batsman"
+		}, {
+			"firstname": "Mohammad",
+			"lastName": "Yousuf",
+			"Role": "Right hand Batsman"
+		}, {
+			"firstname": "Younus",
+			"lastName": "Khan",
+			"Role": "Right hand Batsman"
+		}, {
+			"firstname": "Shahi",
+			"lastName": "Afridi",
+			"Role": "All Rounder"
+		}, {
+			"firstname": "Mohammad",
+			"lastName": "Sami",
+			"Role": "Right Arm fast bowler"
+		}, {
+			"firstname": "Mohammad",
+			"lastName": "Aamir",
+			"Role": "Left Arm fast bowler"
+		}, {
+			"firstname": "Mohammad",
+			"lastName": "Irfan",
+			"Role": "Left Arm fast bowler"
+		}, {
+			"firstname": "Mohammad",
+			"lastName": "Asif",
+			"Role": "Right Arm fast medium bowler"
+		}]
+
+	},
+    
+	"Australia": {
+		"Players": [{
+			"firstname": "Usman",
+			"lastName": "Khwaja",
+			"Role": "Left hand Batsman"
+		}, {
+			"firstname": "David",
+			"lastName": "Warner",
+			"Role": "Left hand Batsman"
+		}, {
+			"firstname": "Damien",
+			"lastName": "Martyn",
+			"Role": "Right hand Batsman"
+		}, {
+			"firstname": "Andrew",
+			"lastName": " Symonds",
+			"Role": "Right hand Batsman"
+		}, {
+			"firstname": "Michael",
+			"lastName": "Clarke",
+			"Role": "Right hand Batsman"
+		}, {
+			"firstname": "Shane",
+			"lastName": "Watson",
+			"Role": "All Rounder"
+		}, {
+			"firstname": "Mitchell",
+			"lastName": "Marsh",
+			"Role": "All Rounder"
+		}, {
+			"firstname": "Mitchell",
+			"lastName": "Stark",
+			"Role": "leftt Arm fast bowler"
+		}, {
+			"firstname": "Nathan",
+			"lastName": "Coulter",
+			"Role": "Right Arm fast bowler"
+		}, {
+			"firstname": "Adam",
+			"lastName": "Zampa",
+			"Role": "Right Arm leg spin bowler"
+		}, {
+			"firstname": "Mitchell",
+			"lastName": "Johnson",
+			"Role": "Left Arm fast bowler"
+		}]
+	},
+	"Sri Lanka": {
+		"Players": [{
+			"firstname": "Tillekaratne",
+			"lastName": "Dilshan",
+			"Role": "Right hand Batsman"
+		}, {
+			"firstname": "Laheru",
+			"lastName": "Thirimanne",
+			"Role": "Left hand Batsman"
+		}, {
+			"firstname": "Kumar",
+			"lastName": "Sangakkara",
+			"Role": "Wicket keeper/Left hand Batsman"
+		}, {
+			"firstname": "Dinesh",
+			"lastName": "Chandimal",
+			"Role": "Right hand Batsman"
+		}, {
+			"firstname": "Angelo",
+			"lastName": "Mathews",
+			"Role": "Right hand Batsman"
+		}, {
+			"firstname": "Dinesh",
+			"lastName": "Chandimal",
+			"Role": "Right hand Batsman"
+		}, {
+			"firstname": "Kusal",
+			"lastName": "Perera",
+			"Role": "Right hand Batsman"
+		}, {
+			"firstname": "Ajantha",
+			"lastName": "Mendis",
+			"Role": "Right Arm off break bowler"
+		}, {
+			"firstname": "Nuwan",
+			"lastName": "Kulasekra",
+			"Role": "Right Arm fast medium bowler"
+		}, {
+			"firstname": "Lasith",
+			"lastName": "Malinga",
+			"Role": "Right Arm fast bowler"
+		}, {
+			"firstname": "Suraj",
+			"lastName": "Randiv",
+			"Role": "Right Arm off spin bowler"
+		}]
+	},
+
+	"West Indies": {
+		"Players": [{
+			"firstname": "Dwayne",
+			"lastName": "Smith",
+			"Role": "Right hand Batsman"
+		}, {
+			"firstname": "Chris",
+			"lastName": "Gayle",
+			"Role": "Left hand Batsman"
+		}, {
+			"firstname": "Marlon",
+			"lastName": "Samuels",
+			"Role": "Right hand Batsman"
+		}, {
+			"firstname": "Dwayne",
+			"lastName": "Bravo",
+			"Role": "All Rounder"
+		}, {
+			"firstname": "Dinesh",
+			"lastName": "Ramdin",
+			"Role": "Wicket Keeper/Right hand Batsman"
+		}, {
+			"firstname": "Rober",
+			"lastName": "Hoods",
+			"Role": "Right hand Batsman"
+		}, {
+			"firstname": "Carlos",
+			"lastName": "Brathwaite",
+			"Role": "All Rounder"
+		}, {
+			"firstname": "Sunil",
+			"lastName": "Narine",
+			"Role": "Right Arm off break bowler"
+		}, {
+			"firstname": "Jerome",
+			"lastName": "Taylor",
+			"Role": "Right Arm fast medium bowler"
+		}, {
+			"firstname": "Mervyn",
+			"lastName": "Dillon",
+			"Role": "Right Arm fast medium bowler"
+		}, {
+			"firstname": "Tino",
+			"lastName": "Best",
+			"Role": "Right Arm fast medium bowler"
+		}]
+	},
+	"England": {
+		"Players": [{
+			"firstname": "Alex",
+			"lastName": "Hales",
+			"Role": "Right hand Batsman"
+		}, {
+			"firstname": "Rob",
+			"lastName": "Hanny",
+			"Role": "Left hand Batsman"
+		}, {
+			"firstname": "Paul",
+			"lastName": "Collingwood",
+			"Role": "Right hand Batsman"
+		}, {
+			"firstname": "Bob",
+			"lastName": "Jack",
+			"Role": "All Rounder"
+		}, {
+			"firstname": "Riley",
+			"lastName": "Ray",
+			"Role": "Wicket Keeper/Right hand Batsman"
+		}, {
+			"firstname": "Finn",
+			"lastName": "Alex",
+			"Role": "Right hand Batsman"
+		}, {
+			"firstname": "Joe",
+			"lastName": "Root",
+			"Role": "All Rounder"
+		}, {
+			"firstname": "Steve",
+			"lastName": "Finn",
+			"Role": "Right Arm off break bowler"
+		}, {
+			"firstname": "Darren",
+			"lastName": "Gough",
+			"Role": "Right Arm fast medium bowler"
+		}, {
+			"firstname": "Andy",
+			"lastName": "Caddick",
+			"Role": "Right Arm fast medium bowler"
+		}, {
+			"firstname": "Ricky",
+			"lastName": "Martin",
+			"Role": "Right Arm fast medium bowler"
+		}]
+	}
+
+}
