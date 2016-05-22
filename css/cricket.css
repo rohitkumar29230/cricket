@@ -1,6 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #aaa;
+    font-family: arial;
+    color: #fff;
+    background: url('../images/Cricket-Ground-Jaysta3d-S5.jpg')no-repeat top ;
+    
+}
+
 #intro{
-    height: 30px;
-    width: 30px;
-    background:blue;
-    cursor: pointer;
+    height: 300px;
+    width: 400px;
+    background:#323131;
+    border-radius: 8px;
+    margin-left: 465px;
+    border: 10px solid black;
+    opacity: .9;
+    margin-top: 200px;
+    
+    position: relative;
+}
+#intro .play_now img{
+    position:absolute;
+    bottom: 20px;
+    left: 100px;
+    cursor:pointer;
+}
+
+#intro .play_now h2, p{
+    text-align: center;
+    margin-top: 10px;
+}
+#intro .play_now p{
+   padding: 0 20px;;
+}
+
+
+/*---------------TEAMS-------------------------------*/
+
+#team{
+    height: 300px;
+    width: 700px;
+    background:#323131;
+    border-radius: 8px;
+    margin-left: 330px;
+    border: 10px solid black;
+    margin-top: 200px;
+    position: relative;
+    display: none;
+}
+
+#team ul{
+    clear: both;
+    border: 1px solid red;
+}
+#team ul li{
+    margin: 0px;
+    list-style: none;
+      
+    display: inline;
 }
