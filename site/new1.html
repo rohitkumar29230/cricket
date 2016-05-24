@@ -29,6 +29,16 @@
 <!-- Vendor: Angular, followed by our custom Javascripts -->
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
+<style>
+    div.TeamListClass label{
+        min-width: 180px;
+            float:left;
+            font-weight: normal;
+                
+    }
+    
+</style>
+
 </head>
 <body ng-app="cricketApp">
 <!--[if lt IE 7]>
@@ -43,6 +53,13 @@
 
 
 <!-- Our Website Javascripts -->
+<div ng-include="templates/landing.html"></div>
+<div ng-view></div>
+
+
+
+
+
 <script src="js/main2.js"></script>
 
 </body>

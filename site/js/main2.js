@@ -1,9 +1,4 @@
 /**
- * AngularJS Tutorial 1
- * @author Nick Kaye <nick.c.kaye@gmail.com>
- */
-
-/**
  * Main AngularJS Web Application
  */
 var app = angular.module('cricketApp', [
@@ -16,19 +11,37 @@ var app = angular.module('cricketApp', [
 app.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
     // Home
-    .when("/", {templateUrl: "partials/home.html", controller: "PageCtrl"})
-    // Pages
-    .when("/about", {templateUrl: "partials/about.html", controller: "PageCtrl"})
-    .when("/faq", {templateUrl: "partials/faq.html", controller: "PageCtrl"})
-    .when("/pricing", {templateUrl: "partials/pricing.html", controller: "PageCtrl"})
-    .when("/services", {templateUrl: "partials/services.html", controller: "PageCtrl"})
-    .when("/contact", {templateUrl: "partials/contact.html", controller: "PageCtrl"})
-    // Blog
-    .when("/blog", {templateUrl: "partials/blog.html", controller: "BlogCtrl"})
-    .when("/blog/post", {templateUrl: "partials/blog_item.html", controller: "BlogCtrl"})
+    .when("/", {templateUrl: "templates/landing.html", controller: "PageCtrl"})
+    // Teams Page
+    .when("/select-team", {templateUrl: "templates/teamlist.html", controller: "teamList"})
     // else 404
     .otherwise("/404", {templateUrl: "partials/404.html", controller: "PageCtrl"});
 }]);
+
+
+app.controller('teamList', function($scope, $http){
+    
+        $http.get('database.json')
+            .then(function($response){
+               var _teamArry = [];
+               $scope.teamsLst =  $response.data;
+               $scope.countr= 0;
+               angular.forEach($scope.teamsLst.Teams, function(_value, _index){
+                   _teamArry.push(_value.Name);
+               });
+               $scope.names = _teamArry;
+               $scope.my = { favorite: '----------' };
+
+            });
+            
+            $scope.PlayersList =  function(){
+                $scope.msg = 'gone'
+            }
+            
+});
+
+
+
 
 /**
  * Controls the Blog
@@ -41,15 +54,7 @@ app.controller('BlogCtrl', function (/* $scope, $location, $http */) {
  * Controls all other Pages
  */
 app.controller('PageCtrl', function (/* $scope, $location, $http */) {
-  console.log("Page Controller reporting for duty.");
 
-  // Activates the Carousel
-  $('.carousel').carousel({
-    interval: 5000
-  });
+ $scope.my = 1;
 
-  // Activates Tooltips for Social Links
-  $('.tooltip-social').tooltip({
-    selector: "a[data-toggle=tooltip]"
-  });
 });

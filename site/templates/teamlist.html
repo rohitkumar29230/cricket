@@ -1,0 +1,48 @@
+<div style="width:30%; margin:0 auto;">
+    <div class="container" style="float:left; width:50%; ">
+
+        <div ><strong>Team 1</strong></div>    
+        <div ng-controller="teamList">
+            <div class="TeamListClass">
+                <label ng-repeat="name in names" >{{name}}
+                    <input type="radio"
+                           
+                           ng-model="my.favorite"
+                           ng-value="name"
+                           
+                           id="{{name}}"
+                           name="favorite1">
+                </label>
+                
+            </div>
+            <div>You chose <strong>{{my.favorite}}</strong></div>
+        </div>
+    </div> 
+    
+    <div class="container" style="float:left; width:50%;">
+
+        <div ><strong>Team 2</strong></div>    
+        <div ng-controller="teamList">
+            <div class="TeamListClass">
+                <label ng-repeat="name in names" >{{name}}
+                    <input  type="radio"
+                           
+                           ng-model="my.favorite"
+                           ng-value="name"
+                           ng-required ="my.favorite"
+                           id="{{name}}"
+                           name="favorite">
+                </label>
+                
+            </div>
+            <div>You chose <strong>{{my.favorite}}</strong></div>
+        </div>
+    </div> 
+    
+   <p >
+        
+       <a href="javascript:" ng-click="PlayersList()" ><br/>View Selected Team Players</a> <div>{{msg}} </div></p> 
+</div>
+
+   
+
