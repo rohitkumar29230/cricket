@@ -1,48 +1,73 @@
 <div style="width:30%; margin:0 auto;">
+
+    <!--List for player one -->
     <div class="container" style="float:left; width:50%; ">
 
-        <div ><strong>Team 1</strong></div>    
+            
         <div ng-controller="teamList">
-            <div class="TeamListClass">
-                <label ng-repeat="name in names" >{{name}}
-                    <input type="radio"
-                           
-                           ng-model="my.favorite"
-                           ng-value="name"
-                           
-                           id="{{name}}"
-                           name="favorite1">
-                </label>
-                
+            
+            <div class="teamList">
+                <div ><strong>Team 1</strong></div>
+                <ul ><li ng-repeat="team in allTeams"><img height="14" width="14" src="{{team['Image_url']}}" />
+                        <label>
+                            <input  type="radio" ng-click="setTeam(team['ID'])" name="teamA" ng-model="teamList.teamA" value="{{team['ID']}}" /> {{team['Name']}}  
+                        </label>
+                    </li>
+                </ul>
             </div>
-            <div>You chose <strong>{{my.favorite}}</strong></div>
-        </div>
-    </div> 
-    
-    <div class="container" style="float:left; width:50%;">
 
-        <div ><strong>Team 2</strong></div>    
-        <div ng-controller="teamList">
-            <div class="TeamListClass">
-                <label ng-repeat="name in names" >{{name}}
-                    <input  type="radio"
-                           
-                           ng-model="my.favorite"
-                           ng-value="name"
-                           ng-required ="my.favorite"
-                           id="{{name}}"
-                           name="favorite">
-                </label>
-                
+            <!--div to show the players list-->
+            <div class="ng-hide players" >        
+                <p>{{teamName}}</p>
+                <ul>
+                    <li ng-repeat="player in teamPlayers"  >
+                        {{player['firstname'] + ' ' + player['lastName']}}
+                        
+                        <p><small>{{player['Role']}}</small></p>
+                        <hr/>
+                    </li>
+                </ul>
             </div>
-            <div>You chose <strong>{{my.favorite}}</strong></div>
+            <!--div to show the players list-->
         </div>
     </div> 
-    
-   <p >
-        
-       <a href="javascript:" ng-click="PlayersList()" ><br/>View Selected Team Players</a> <div>{{msg}} </div></p> 
+    <!--List for player one -->
+
+
+    <!--List for player two -->
+    <div class="container" ng-controller="teamList" style="float:left; width:50%;">
+        <div class="teamList" ng-show="true">
+            <div ><strong>Team 2</strong></div>  
+            <ul>
+                <li ng-repeat="team in allTeams"><img height="14" width="14" src="{{team['Image_url']}}" />
+                    <label>
+                        <input  type="radio" ng-click="setTeam(team['ID'])" name="teamB" id="" ng-model="teamList.teamB" value="{{team['ID']}}" /> {{team['Name']}}  
+                    </label>
+                </li>
+
+            </ul>  
+        </div>
+        <!--div to show the players list-->
+        <div class="ng-hide players" >
+            <p>{{teamName}}</p>
+            <ul>
+                
+                <li ng-repeat="player in teamPlayers"  >
+                    {{player['firstname'] + ' ' + player['lastName']}}
+                    <p><small>{{player['Role']}}</small></p>
+                    <hr/>
+                </li>
+            </ul>
+        </div>
+        <!--div to show the players list-->
+    </div> 
+
+    <!--List for player two -->
+    <div ng-controller="teamList"   ng-click="showTeams()"> 
+    <p><a>View Selected Team Players </a> </p> 
+    <small>{{msg}}</small>
+    </div>
 </div>
 
-   
+
 

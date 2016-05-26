@@ -1,0 +1,22 @@
+<html ng-app="notesApp">
+<head><title>Notes App</title></head>
+<body ng-controller="MainCtrl">
+
+  <input type="text" ng-model="ctrl.username"/>
+  You typed {{ctrl.username}}
+
+  <input type="text" ng-model="MainCtrl.pass"/>
+  You typed {{MainCtrl.pass}}
+  
+<script
+  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js">
+</script>
+<script type="text/javascript">
+  angular.module('notesApp', [])
+    .controller('MainCtrl', [function() {
+      this.username = 'nothing';
+      this.pass = '';
+    }]);
+</script>
+</body>
+</html>
