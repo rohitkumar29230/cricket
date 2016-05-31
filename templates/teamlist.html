@@ -1,0 +1,133 @@
+<div ng-controller="teamList" style="width:30%; margin:0 auto;">
+
+    <!--Country List for player one -->
+    <div  class="container" ng-show="containers" style="float:left; width:50%; ">
+
+
+        <div >
+
+            <div class="teamList">
+                <div ><strong>Team 1</strong></div>
+                <ul ><li ng-repeat="team in allTeams"><img height="14" width="14" src="{{team['Image_url']}}" />
+                        <label>
+                            <input  type="radio" ng-click="setTeam1(team['ID'])" name="teamA" ng-model="teamList.teamA" value="{{team['ID']}}" /> {{team['Name']}}  
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div> 
+    <!--Country List for player one -->
+
+
+    <!--Country List for player two -->
+    <div class="container" ng-show="containers" style="float:left; width:50%;">
+        <div class="teamList" ng-show="true">
+            <div ><strong>Team 2</strong></div>  
+            <ul>
+                <li ng-repeat="team in allTeams"><img height="14" width="14" src="{{team['Image_url']}}" />
+                    <label>
+                        <input  type="radio" ng-click="setTeam2(team['ID'])" name="teamB" id="" ng-model="teamList.teamB" value="{{team['ID']}}" /> {{team['Name']}}  
+                    </label>
+                </li>
+
+            </ul>  
+        </div>
+        <!--Country List for player two -->
+
+
+
+        <!--button to show the players list-->
+        <div  ng-click="showTeams()" ng-show="showPlayerButton"  > 
+            <p><a>{{linkText}}</a> </p> 
+            <small>{{msg}}</small>
+        </div>
+        <!--button to show the players list-->
+
+
+
+
+        <!--button to show the toss options-->
+        <div  ng-click="showToss()" ng-show="showTossButton"  > 
+            <p><a>{{linkText}}</a> </p> 
+            <small>{{msg}}</small>
+        </div>
+        <!--button to show the toss options-->
+
+
+    </div> 
+
+
+    <!--div to show the players list one-->
+    <div class="ng-hide players" ng-show="players">
+        <p>{{teamName2}}</p>
+        <ul>
+            <li ng-repeat="player in teamPlayers2"  >
+                {{player['firstname'] + ' ' + player['lastName']}}
+                <p><small>{{player['Role']}}</small></p>
+                <hr/>
+            </li>
+        </ul>
+    </div>
+
+    <!--div to show the players list one-->        
+
+
+
+
+    <!--div to show the players list two-->
+    <div class="ng-hide players" ng-show="players">        
+        <p>{{teamName1}}</p>
+        <ul>
+            <li ng-repeat="player in teamPlayers1"  >
+                {{player['firstname'] + ' ' + player['lastName']}}
+
+                <p><small>{{player['Role']}}</small></p>
+                <hr/>
+            </li>
+        </ul>
+    </div>
+    <!--div to show the players list two-->
+
+
+
+    <div  class="container" ng-show="toss" >
+        <h2>Toss <small>Choose Heads Or Tails</small></h2>
+        <label>Heads
+            <input  type="radio" ng-model="toss" name="toss" id="" ng-value="1" />   
+        </label>
+        <label>Tails
+            <input  type="radio"  ng-model="toss"  name="toss" id="" ng-value="2" />   
+        </label>
+        <a href="javascript:"  ng-click="spinToss(toss)" >Spin Toss</a>
+    </div>
+
+
+    <div  class="container" ng-show="batorbowl" >
+        <strong>{{tossResult}}</strong>
+      <h2>{{teamName}} Choose To: <small> Bat Or Ball</small></h2>
+        <label>Batting
+            <input  type="radio" ng-model="chances" name="chance" id="" ng-value="1" />   
+        </label>
+        <label>Balling
+            <input  type="radio"  ng-model="chances"  name="chance" id="" ng-value="2" />   
+        </label>
+        <a href="javascript:"  ng-click="chooseTo()" > Select </a>
+    </div>
+    
+    
+<div  class="container" ng-show="true" >
+    <strong>{{playingOrder}}</strong>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
